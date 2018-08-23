@@ -1,0 +1,81 @@
+html, 
+body {
+    background-color: #347a3e;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Hide mobile navbar in desktop view */ 
+.mobileNavbar {
+    display: none;
+}
+
+/* Float desktop navbar to the left */
+.navbar {
+    float: left;
+}
+
+#map {
+    height: 100%;
+}
+
+/* Adjust for mobile view */
+@media screen and (max-width: 600px) {
+    /* Hide desktop navbar in mobile view */ 
+    .navbar {
+        display: none;
+    }
+
+    /* Display mobile navbar in mobile view */ 
+    .mobileNavbar {
+        display: block;
+    }
+
+    #map {
+        height: 60%;
+    }
+
+    li {
+        padding: 15px 0 0 16px;
+        height: 30px;
+    }
+}
+
+li {
+    color: #f4ffec;
+    padding: 10px 10px 8px 10px;
+    font-size: 16px;
+}
+
+li:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #3e483d;
+}
+
+ul {
+    padding: 0px 7px 7px 5px;
+    list-style: none;
+}
+
+.arial-font {
+    font-family: Arial, sans-serif;
+}
+
+.search {
+    height: 30px;
+    text-align: center;
+}
+
+.search-field {
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.neighborhood-title {
+    color: #f4ffec;
+    text-align: center;
+}
